@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6851BE0E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{A67F355C-F126-40A7-9E11-41CFB80E3824}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1 StartWithALetter", "StartWithALetter\0.1 StartWithALetter.csproj", "{F89313C6-4594-4D27-8880-11F9C1987BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.2 FindOutAge", "FindOutAge\0.2 FindOutAge.csproj", "{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{A67F355C-F126-40A7-9E11-41CFB80E3824}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A67F355C-F126-40A7-9E11-41CFB80E3824}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A67F355C-F126-40A7-9E11-41CFB80E3824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89313C6-4594-4D27-8880-11F9C1987BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89313C6-4594-4D27-8880-11F9C1987BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89313C6-4594-4D27-8880-11F9C1987BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89313C6-4594-4D27-8880-11F9C1987BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
