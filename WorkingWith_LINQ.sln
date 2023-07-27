@@ -5,11 +5,15 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6851BE0E-1B35-4A61-B217-A729807362A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{A67F355C-F126-40A7-9E11-41CFB80E3824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Testing\Testing.csproj", "{A67F355C-F126-40A7-9E11-41CFB80E3824}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.1 StartWithALetter", "StartWithALetter\0.1 StartWithALetter.csproj", "{F89313C6-4594-4D27-8880-11F9C1987BE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.1 StartWithALetter", "StartWithALetter\0.1 StartWithALetter.csproj", "{F89313C6-4594-4D27-8880-11F9C1987BE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.2 FindOutAge", "FindOutAge\0.2 FindOutAge.csproj", "{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.2 FindOutAge", "FindOutAge\0.2 FindOutAge.csproj", "{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.3 SigningUpStudentForCourses", "SigningUpStudentForCourses\0.3 SigningUpStudentForCourses.csproj", "{C749C124-0FF9-4FEE-8297-587DC1E615BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQSelectMany", "LINQSelectMany\LINQSelectMany.csproj", "{22C8EDDA-676D-4F01-8D91-197EDD38D361}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,14 @@ Global
 		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C749C124-0FF9-4FEE-8297-587DC1E615BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C749C124-0FF9-4FEE-8297-587DC1E615BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C749C124-0FF9-4FEE-8297-587DC1E615BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C749C124-0FF9-4FEE-8297-587DC1E615BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

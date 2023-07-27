@@ -1,33 +1,23 @@
 ﻿
 
-var people = new List<Person>
+
+
+
+
+var companies = new List<Company>
 {
-    new Person ("Tom", 23),
-    new Person ("Bob", 27)
+    new Company("Microsoft", new List<Person> {new Person("Tom"), new Person("Bob")}),
+    new Company("Google", new List<Person> {new Person("Sam"), new Person("Mike")}),
 };
+var employees = companies.SelectMany(c => c.Staff);
 
-var personel = from p in people
-               select new
-               {
-                   FirstName = p.Name,
-                   Year = DateTime.Now.Year - p.Age
-               };
-
-foreach (var p in personel)
-    Console.WriteLine($"{p.FirstName} - {p.Year}");
-
-
-
-
-
+foreach (var emp in employees)
+    Console.WriteLine($"{emp.Name}");
 
 
 
 Console.ReadLine();
 
+record class Company(string Name, List<Person> Staff);
+record class Person(string Name);
 
-
-
-
-
-record class Person(string Name, int Age);
