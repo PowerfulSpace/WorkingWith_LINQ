@@ -2,25 +2,17 @@
 
 
 
-Person[] students = { new Person("Tom"), new Person("Bob"), new Person("Sam") };
-Person[] employees = { new Person("Tom"), new Person("Bob"), new Person("Mike") };
+Person[] people2 = { new Person("Tom", 37), new Person("Sam", 28), new Person("Bob", 41) };
 
-// объединение последовательностей
-var people = students.Union(employees);
+int minAge = people2.Min(p => p.Age); // минимальный возраст
+int maxAge = people2.Max(p => p.Age); // максимальный возраст
+double averageAge = people2.Average(p => p.Age); //средний возраст
 
-foreach (Person person in people)
-    Console.WriteLine(person.Name);
+Console.WriteLine($"Min Age: {minAge}");           // Min Age: 28
+Console.WriteLine($"Max Age: {maxAge}");           // Max Age: 41
+Console.WriteLine($"Average Age: {averageAge}");   // Average Age: 35,33
+
 Console.ReadLine();
 
-class Person
-{
-    public string Name { get; }
-    public Person(string name) => Name = name;
 
-    public override bool Equals(object? obj)
-    {
-        if (obj is Person person) return Name == person.Name;
-        return false;
-    }
-    public override int GetHashCode() => Name.GetHashCode();
-}
+record class Person(string Name, int Age);

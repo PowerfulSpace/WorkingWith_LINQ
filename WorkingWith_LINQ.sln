@@ -25,9 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.8 LINQOrderByAndThenBy", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.9 OrderByIComparer", "OrderByIComparer\0.9 OrderByIComparer.csproj", "{3C1A68FA-0507-4E2B-B213-B58C86E66940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.0 LINQ_Except_Intersect_Union_Concat", "LINQExcept\2.0 LINQ_Except_Intersect_Union_Concat.csproj", "{5EA764E4-61AD-48B9-99FA-38586DFBC5FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.0 LINQ_Except_Intersect_Union_Concat", "LINQExcept\2.0 LINQ_Except_Intersect_Union_Concat.csproj", "{5EA764E4-61AD-48B9-99FA-38586DFBC5FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Distinct", "LINQ_Distinct\LINQ_Distinct.csproj", "{AF2BF92D-E1E9-42DD-A9CC-35821DD434A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.1 LINQ_Distinct", "LINQ_Distinct\2.1 LINQ_Distinct.csproj", "{AF2BF92D-E1E9-42DD-A9CC-35821DD434A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.2 LINQOrderByObjects", "LINQOrderByObjects\2.2 LINQOrderByObjects.csproj", "{39FC9B79-04E6-41D4-A414-D8F2D2DD7FA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.3 LINQAggregate", "LINQAggregate\2.3 LINQAggregate.csproj", "{A26F7E47-D170-4094-AF61-A8FD6947B95F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4 LINQ_SelectMany_CountryWinner", "LINQ_SelectMany\2.4 LINQ_SelectMany_CountryWinner.csproj", "{784D73EA-3051-4BC6-BA60-5FB1F56EB427}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +89,18 @@ Global
 		{AF2BF92D-E1E9-42DD-A9CC-35821DD434A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF2BF92D-E1E9-42DD-A9CC-35821DD434A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF2BF92D-E1E9-42DD-A9CC-35821DD434A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39FC9B79-04E6-41D4-A414-D8F2D2DD7FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FC9B79-04E6-41D4-A414-D8F2D2DD7FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FC9B79-04E6-41D4-A414-D8F2D2DD7FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FC9B79-04E6-41D4-A414-D8F2D2DD7FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26F7E47-D170-4094-AF61-A8FD6947B95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26F7E47-D170-4094-AF61-A8FD6947B95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26F7E47-D170-4094-AF61-A8FD6947B95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26F7E47-D170-4094-AF61-A8FD6947B95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784D73EA-3051-4BC6-BA60-5FB1F56EB427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784D73EA-3051-4BC6-BA60-5FB1F56EB427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784D73EA-3051-4BC6-BA60-5FB1F56EB427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784D73EA-3051-4BC6-BA60-5FB1F56EB427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
