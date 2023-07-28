@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.1 StartWithALetter", "Sta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.2 FindOutAge", "FindOutAge\0.2 FindOutAge.csproj", "{F2DF58F7-AE01-49D1-BD2A-DDD16988A98A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.3 SigningUpStudentForCourses", "SigningUpStudentForCourses\0.3 SigningUpStudentForCourses.csproj", "{C749C124-0FF9-4FEE-8297-587DC1E615BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.3 SigningUpStudentForCourses", "SigningUpStudentForCourses\0.3 SigningUpStudentForCourses.csproj", "{C749C124-0FF9-4FEE-8297-587DC1E615BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQSelectMany", "LINQSelectMany\LINQSelectMany.csproj", "{22C8EDDA-676D-4F01-8D91-197EDD38D361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.4 LINQSelectMany", "LINQSelectMany\0.4 LINQSelectMany.csproj", "{22C8EDDA-676D-4F01-8D91-197EDD38D361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.5 LINQWhere", "LINQWhere\0.5 LINQWhere.csproj", "{0ECBBEC3-C99D-4D2C-8530-EEF471E2FD9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.6 LINQWhereSelectMany", "LINQWhereSelectMany\0.6 LINQWhereSelectMany.csproj", "{02A26083-D51F-4533-B942-57A383C875EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,14 @@ Global
 		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C8EDDA-676D-4F01-8D91-197EDD38D361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECBBEC3-C99D-4D2C-8530-EEF471E2FD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECBBEC3-C99D-4D2C-8530-EEF471E2FD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECBBEC3-C99D-4D2C-8530-EEF471E2FD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECBBEC3-C99D-4D2C-8530-EEF471E2FD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A26083-D51F-4533-B942-57A383C875EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A26083-D51F-4533-B942-57A383C875EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A26083-D51F-4533-B942-57A383C875EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A26083-D51F-4533-B942-57A383C875EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
