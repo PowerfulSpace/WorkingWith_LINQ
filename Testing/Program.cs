@@ -1,13 +1,14 @@
 ﻿
-int[] numbers = { 1, 2, 3, 4 };
-string[] words = { "one", "two", "three" };
 
-var numbersAndWords = numbers.Zip(words, (first, second) => first + " " + second);
+string[] people = { "Tom", "Sam", "Bob" };
 
-foreach (var enrollment in numbersAndWords)
-    Console.WriteLine(enrollment);
+var selectedPeople = people.Where(s => s.Length == 3).OrderBy(s => s);
+
+people[2] = "Mike";
+// выполнение LINQ-запроса
+foreach (string s in selectedPeople)
+    Console.WriteLine(s);
 Console.ReadLine();
 
 
-record class Course(string Title);  // учебный курс
-record class Student(string Name);  // студент
+
