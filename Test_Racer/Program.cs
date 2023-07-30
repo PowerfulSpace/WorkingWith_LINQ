@@ -11,22 +11,37 @@ var teams = Formula1.GetContructorChampions();
 //var quary2 = racers.SelectMany(x => x.Years, (x, y) => new { Year = y, MyRacer = x.FirstName });
 
 //---------------------------------------------------------------------------------------
-var quary3 = from x in racers
-             select new
-             {
-                 Name = x.LastName,
-                 Years = x.Years,
-                 Cars = x.Cars.Aggregate((first, next) => $"{first} {next}")
-             };
+//var quary3 = from x in racers
+//             select new
+//             {
+//                 Name = x.LastName,
+//                 Years = x.Years,
+//                 Cars = x.Cars.Aggregate((first, next) => $"{first} {next}")
+//             };
 
-foreach (var item in quary3)
+//foreach (var item in quary3)
+//{
+//    foreach (var item2 in item.Years)
+//    {
+//        Console.WriteLine("{0,-10} {1,-10} {2}", item2, item.Name, item.Cars);
+//    }
+//}
+//---------------------------------------------------------------------------------------
+
+
+var quary4 = from x in racers
+             from y in x.Years
+             group x by y into g
+             select g;
+
+foreach (var item in quary4)
 {
-    foreach (var item2 in item.Years)
+    Console.WriteLine(item.Key);
+    foreach (var item2 in item)
     {
-        Console.WriteLine("{0,-10} {1,-10} {2}", item2, item.Name, item.Cars);
+        Console.WriteLine(item2);
     }
 }
-//---------------------------------------------------------------------------------------
 
 
 

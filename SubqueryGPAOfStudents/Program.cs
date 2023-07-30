@@ -2,29 +2,29 @@
 
 var students = Student.students;
 
-var groupByCompoundKey =
-    from student in students
-    group student by new
-    {
-        FirstLetter = student.LastName[0],
-        IsScoreOver85 = student.ExamScores[0] > 85
-    } into studentGroup
-    orderby studentGroup.Key.FirstLetter
-    select studentGroup;
 
-foreach (var scoreGroup in groupByCompoundKey)
-{
-    string s = scoreGroup.Key.IsScoreOver85 == true ? "more than 85" : "less than 85";
-    Console.WriteLine($"Name starts with {scoreGroup.Key.FirstLetter} who scored {s}");
-    foreach (var item in scoreGroup)
+var queryGroupMax =
+    from student in students
+    group student by student.Year into studentGroup
+    select new
     {
-        Console.WriteLine($"\t{item.FirstName} {item.LastName}");
-    }
+        Level = studentGroup.Key,
+        HighestScore = (
+            from student2 in studentGroup
+            select student2.ExamScores.Average()
+        ).Max()
+    };
+
+int count = queryGroupMax.Count();
+Console.WriteLine($"Number of groups = {count}");
+
+foreach (var item in queryGroupMax)
+{
+    Console.WriteLine($"  {item.Level} Highest Score={item.HighestScore}");
 }
 
+
 Console.ReadLine();
-
-
 
 
 class Student
