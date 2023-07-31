@@ -61,7 +61,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.5 StudentSelectionByGPA",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.6 GroupingByFirstLetters", "GroupingByFirstLetters\3.6 GroupingByFirstLetters.csproj", "{EE124659-56DD-4938-8D3B-2EC827D1761B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.7 SubqueryGPAOfStudents", "SubqueryGPAOfStudents\3.7 SubqueryGPAOfStudents.csproj", "{C71CE991-58E7-4D86-AF46-03999A76819C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.7 SubqueryGPAOfStudents", "SubqueryGPAOfStudents\3.7 SubqueryGPAOfStudents.csproj", "{C71CE991-58E7-4D86-AF46-03999A76819C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.8 GruppierenSieNachAnonymemTyp", "GruppierenSieNachAnonymemTyp\3.8 GruppierenSieNachAnonymemTyp.csproj", "{9377B35D-D53F-4B81-853E-F47FB6A914B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.9 NestedGrouping", "NestedGrouping\3.9 NestedGrouping.csproj", "{9400D380-6868-4C3C-AA35-6691720679C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owner-PetMappings", "Owner-PetMappings\Owner-PetMappings.csproj", "{F28F9241-879B-4770-98AC-BCA9BBE9157B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +191,18 @@ Global
 		{C71CE991-58E7-4D86-AF46-03999A76819C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C71CE991-58E7-4D86-AF46-03999A76819C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C71CE991-58E7-4D86-AF46-03999A76819C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9377B35D-D53F-4B81-853E-F47FB6A914B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9377B35D-D53F-4B81-853E-F47FB6A914B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9377B35D-D53F-4B81-853E-F47FB6A914B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9377B35D-D53F-4B81-853E-F47FB6A914B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9400D380-6868-4C3C-AA35-6691720679C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9400D380-6868-4C3C-AA35-6691720679C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9400D380-6868-4C3C-AA35-6691720679C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9400D380-6868-4C3C-AA35-6691720679C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28F9241-879B-4770-98AC-BCA9BBE9157B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28F9241-879B-4770-98AC-BCA9BBE9157B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28F9241-879B-4770-98AC-BCA9BBE9157B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28F9241-879B-4770-98AC-BCA9BBE9157B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

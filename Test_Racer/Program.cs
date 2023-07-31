@@ -29,19 +29,24 @@ var teams = Formula1.GetContructorChampions();
 //---------------------------------------------------------------------------------------
 
 
-var quary4 = from x in racers
-             from y in x.Years
-             group x by y into g
-             select g;
+//var quary4 = from x in racers
+//             from y in x.Years
+//             group x by y into g
+//             select g;
 
-foreach (var item in quary4)
-{
-    Console.WriteLine(item.Key);
-    foreach (var item2 in item)
-    {
-        Console.WriteLine(item2);
-    }
-}
+//foreach (var item in quary4)
+//{
+//    Console.WriteLine(item.Key);
+//    foreach (var item2 in item)
+//    {
+//        Console.WriteLine(item2);
+//    }
+//}
+
+
+
+
+
 
 
 

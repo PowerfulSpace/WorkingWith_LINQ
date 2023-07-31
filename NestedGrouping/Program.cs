@@ -1,52 +1,34 @@
 ﻿
-List<Employee> employees = new()
-{
-    new(FirstName: "Terry", LastName: "Adams", EmployeeID: 522459),
-    new("Charlotte", "Weiss", 204467),
-    new("Magnus", "Hedland", 866200),
-    new("Vernette", "Price", 437139)
-};
 
-List<Student> students = new()
-{
-    new(FirstName: "Vernette", LastName: "Price", StudentID: 9562),
-    new("Terry", "Earls", 9870),
-    new("Terry", "Adams", 9913)
-};
+var students = Student.students;
 
-var query =
-    from employee in employees
-    join student in students on new
+var nestedGroupsQuery =
+    from student in students
+    group student by student.Year into newGroup1
+    from newGroup2 in (
+        from student in newGroup1
+        group student by student.LastName
+    )
+    group newGroup2 by newGroup1.Key;
+
+
+foreach (var outerGroup in nestedGroupsQuery)
+{
+    Console.WriteLine($"Курс = {outerGroup.Key}");
+    foreach (var innerGroup in outerGroup)
     {
-        employee.FirstName,
-        employee.LastName
-    } equals new
-    {
-        student.FirstName,
-        student.LastName
+        Console.WriteLine($"\tФамилии которые начинаются с: {innerGroup.Key}");
+        foreach (var innerGroupElement in innerGroup)
+        {
+            Console.WriteLine($"\t\t{innerGroupElement.LastName} {innerGroupElement.FirstName}");
+        }
     }
-    select employee.FirstName + " " + employee.LastName;
-
-
-
-
-string result = "";
-result += "The following people are both employees and students:\r\n";
-foreach (string name in query)
-{
-    result += $"{name}\r\n";
 }
-Console.Write(result);
-
-
-
-
 
 Console.ReadLine();
 
 
 
-record Employee(string FirstName, string LastName, int EmployeeID);
 
 class Student
 {
@@ -127,6 +109,16 @@ class Student
         ),
         new(
             "Michael", "Tucker", 122,
+            GradeLevel.FirstYear,
+            new() { 94, 92, 91, 91 }
+        ),
+        new(
+            "Hugo", "Tucker", 122,
+            GradeLevel.FirstYear,
+            new() { 94, 92, 91, 91 }
+        ),
+        new(
+            "Cesar", "Tucker", 122,
             GradeLevel.FirstYear,
             new() { 94, 92, 91, 91 }
         ),
