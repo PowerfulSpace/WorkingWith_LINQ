@@ -69,9 +69,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.9 NestedGrouping", "Neste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.0 Owner-PetMappings", "Owner-PetMappings\4.0 Owner-PetMappings.csproj", "{F28F9241-879B-4770-98AC-BCA9BBE9157B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1 CompositeKeyJoins", "CompositeKeyJoins\4.1 CompositeKeyJoins.csproj", "{428850CF-E0FD-4149-87F8-9D9B7B574357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.1 CompositeKeyJoins", "CompositeKeyJoins\4.1 CompositeKeyJoins.csproj", "{428850CF-E0FD-4149-87F8-9D9B7B574357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleConnection", "MultipleConnection\MultipleConnection.csproj", "{89339BA6-6B8A-4307-BA48-FA25A17B954C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.2 MultipleConnection", "MultipleConnection\4.2 MultipleConnection.csproj", "{89339BA6-6B8A-4307-BA48-FA25A17B954C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3 LINQ_XElement", "LINQ_XElement\4.3 LINQ_XElement.csproj", "{10EFA6A4-9376-4DAF-9879-390076DA507F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.4 PerformingLeftOuterJoins", "PerformingLeftOuterJoins\4.4 PerformingLeftOuterJoins.csproj", "{C746F2A6-E449-44E7-A876-065A70647156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -215,6 +219,14 @@ Global
 		{89339BA6-6B8A-4307-BA48-FA25A17B954C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89339BA6-6B8A-4307-BA48-FA25A17B954C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89339BA6-6B8A-4307-BA48-FA25A17B954C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EFA6A4-9376-4DAF-9879-390076DA507F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EFA6A4-9376-4DAF-9879-390076DA507F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EFA6A4-9376-4DAF-9879-390076DA507F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EFA6A4-9376-4DAF-9879-390076DA507F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C746F2A6-E449-44E7-A876-065A70647156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C746F2A6-E449-44E7-A876-065A70647156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C746F2A6-E449-44E7-A876-065A70647156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C746F2A6-E449-44E7-A876-065A70647156}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

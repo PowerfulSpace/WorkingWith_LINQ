@@ -4,6 +4,8 @@
 //Год Чемпион	Кубок конструкторов
 //1978	Култхард	МакЛарен Мерседес 
 
+using System.Text.RegularExpressions;
+
 var racers = Formula1.GetChampions();
 var teams = Formula1.GetContructorChampions();
 
@@ -45,8 +47,43 @@ var teams = Formula1.GetContructorChampions();
 //---------------------------------------------------------------------------------------
 
 
-var quary5 = from x in racers
-             select x;
+//var quary5 = from racer in racers
+//             let rYears = racer.Years
+//             from rYear in rYears
+//             group racer by rYear into groupRacers
+//             select new
+//             {
+//                 GroupR = groupRacers,
+
+//                 RTJoin = from r in groupRacers
+//                          let t1 = (from team in teams
+//                                   let tYears = team.Years
+//                                   from tYear in tYears
+//                                   group team by tYear into groupTeams
+//                                   select groupTeams)
+//                          from t in t1
+//                          group t by t.Key into gg
+//                          select gg
+//             };
+
+
+
+
+//foreach (var item in quary5)
+//{
+//    Console.WriteLine(item.GroupR.Key);
+//    foreach (var item2 in item.GroupR)
+//    {
+//        Console.WriteLine("- {0}",item2.LastName);
+//    }
+//}
+//---------------------------------------------------------------------------------------
+
+
+
+var quary6 = from racer in racers
+             select new { };
+
 
 
 
