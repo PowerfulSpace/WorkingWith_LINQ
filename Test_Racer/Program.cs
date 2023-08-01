@@ -4,6 +4,8 @@
 //Год Чемпион	Кубок конструкторов
 //1978	Култхард	МакЛарен Мерседес 
 
+using System.Diagnostics.Metrics;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
 var racers = Formula1.GetChampions();
@@ -81,14 +83,124 @@ var teams = Formula1.GetContructorChampions();
 
 
 
-var quary6 = from racer in racers
-             select new { };
+//var racer1 = from racer in racers
+//             let year = racer.Years
+//             from r in year
+//             group racer by r into g
+//             select g;
+
+//var teams1 = from team in teams
+//             let year = team.Years
+//             from t in year
+//             group team by t into g
+//             select g;
+
+
+//var quary = from x in racer1
+//            join y in teams1 on x.Key equals y.Key
+//            select new
+//            {
+//                Racer = x,
+//                Teams = y
+//            };
+
+
+//foreach (var item in quary)
+//{
+//    Console.WriteLine(item.Racer.Key);
+//    foreach (var racer in item.Racer)
+//    {
+//        Console.WriteLine(racer);
+//    }
+//    foreach (var team in item.Teams)
+//    {
+//        Console.WriteLine(team);
+//    }
+//    Console.WriteLine();
+//}
+
+//---------------------------------------------------------------------------------------
+
+
+
+var racer1 = from racer in racers
+             let year = racer.Years
+             from r in year
+             group racer by r into g
+             select g;
+
+var teams1 = from team in teams
+             let year = team.Years
+             from t in year
+             group team by t into g
+             select g;
+
+
+//var quary = from x in racer1
+//            let group1 = x
+//            from y in teams1
+//            let group2 = y
+//            select new
+//            {
+//                MyGroup = from h in group1
+//                          join t in group2
+//                          on h.key equals t.Name into g
+//                          select g
+//            };
+
+var quary = from x in racer1
+            join y in teams1
+            on x.Key equals y.Key into g
+            select g;
+
+
+foreach (var item in quary)
+{
+    foreach (var item2 in item)
+    {
+        foreach (var item3 in item2)
+        {
+            Console.WriteLine(item3);
+            foreach (var item4 in item3.Years)
+            {
+                Console.WriteLine(item4);
+            }
+            Console.WriteLine();
+        }
+    }
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+//foreach (var item in racer1)
+//{
+//    Console.WriteLine(item.Key);
+//    foreach (var item2 in item)
+//    {
+//        Console.WriteLine(item2);
+//    }
+//}
+
+
+//foreach (var item in teams1)
+//{
+//    Console.WriteLine(item.Key);
+//    foreach (var item2 in item)
+//    {
+//        Console.WriteLine(item2);
+//    }
+//}
 
 
 
@@ -216,4 +328,9 @@ public class Team
     }
     public string Name { get; private set; }
     public IEnumerable<int> Years { get; private set; }
+
+    public override string ToString()
+    {
+        return String.Format("{0}",Name);
+    }
 }
