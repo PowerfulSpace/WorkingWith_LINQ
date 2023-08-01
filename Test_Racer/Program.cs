@@ -42,7 +42,11 @@ var teams = Formula1.GetContructorChampions();
 //        Console.WriteLine(item2);
 //    }
 //}
+//---------------------------------------------------------------------------------------
 
+
+var quary5 = from x in racers
+             select x;
 
 
 

@@ -14,6 +14,14 @@ List<Student> students = new()
     new("Terry", "Adams", 9913)
 };
 
+//var query = employees.Join(
+//     students,
+//     employee => new { FirstName = employee.FirstName, LastName = employee.LastName },
+//     student => new { FirstName = student.FirstName, student.LastName },
+//     (employee, student) => $"{employee.FirstName} {employee.LastName}"
+// );
+
+
 var query =
     from employee in employees
     join student in students on new
