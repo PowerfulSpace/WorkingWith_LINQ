@@ -8,115 +8,6 @@
 var racers = Formula1.GetChampions();
 var teams = Formula1.GetContructorChampions();
 
-//var quary = teams.SelectMany(x => x.Years, (x, y) => new { Year = y, MyRacer = x.Name });
-//var quary2 = racers.SelectMany(x => x.Years, (x, y) => new { Year = y, MyRacer = x.FirstName });
-
-//---------------------------------------------------------------------------------------
-//var quary3 = from x in racers
-//             select new
-//             {
-//                 Name = x.LastName,
-//                 Years = x.Years,
-//                 Cars = x.Cars.Aggregate((first, next) => $"{first} {next}")
-//             };
-
-//foreach (var item in quary3)
-//{
-//    foreach (var item2 in item.Years)
-//    {
-//        Console.WriteLine("{0,-10} {1,-10} {2}", item2, item.Name, item.Cars);
-//    }
-//}
-//---------------------------------------------------------------------------------------
-
-
-//var quary4 = from x in racers
-//             from y in x.Years
-//             group x by y into g
-//             select g;
-
-//foreach (var item in quary4)
-//{
-//    Console.WriteLine(item.Key);
-//    foreach (var item2 in item)
-//    {
-//        Console.WriteLine(item2);
-//    }
-//}
-//---------------------------------------------------------------------------------------
-
-
-//var quary5 = from racer in racers
-//             let rYears = racer.Years
-//             from rYear in rYears
-//             group racer by rYear into groupRacers
-//             select new
-//             {
-//                 GroupR = groupRacers,
-
-//                 RTJoin = from r in groupRacers
-//                          let t1 = (from team in teams
-//                                   let tYears = team.Years
-//                                   from tYear in tYears
-//                                   group team by tYear into groupTeams
-//                                   select groupTeams)
-//                          from t in t1
-//                          group t by t.Key into gg
-//                          select gg
-//             };
-
-
-
-
-//foreach (var item in quary5)
-//{
-//    Console.WriteLine(item.GroupR.Key);
-//    foreach (var item2 in item.GroupR)
-//    {
-//        Console.WriteLine("- {0}",item2.LastName);
-//    }
-//}
-//---------------------------------------------------------------------------------------
-
-
-
-//var racer1 = from racer in racers
-//             let year = racer.Years
-//             from r in year
-//             group racer by r into g
-//             select g;
-
-//var teams1 = from team in teams
-//             let year = team.Years
-//             from t in year
-//             group team by t into g
-//             select g;
-
-
-//var quary = from x in racer1
-//            join y in teams1 on x.Key equals y.Key
-//            select new
-//            {
-//                Racer = x,
-//                Teams = y
-//            };
-
-
-//foreach (var item in quary)
-//{
-//    Console.WriteLine(item.Racer.Key);
-//    foreach (var racer in item.Racer)
-//    {
-//        Console.WriteLine(racer);
-//    }
-//    foreach (var team in item.Teams)
-//    {
-//        Console.WriteLine(team);
-//    }
-//    Console.WriteLine();
-//}
-
-//---------------------------------------------------------------------------------------
 
 
 
@@ -134,20 +25,21 @@ var teams1 = from team in teams
 
 
 
+
 var quary = (from x in racer1
-             let p = x
-             from p2 in p
-             join y in teams1
-             on x.Key equals y.Key into g
-             from k in g
-             let k2 = k
-             from k3 in k2
-             select new
-             {
-                 MyRacers = p2.LastName,
-                 MyTeams = g,
-                 MyCommand = k3.Name
-             }).ToList();
+            let p = x
+            from p2 in p
+            join y in teams1
+            on x.Key equals y.Key into g
+            from k in g
+            let k2 = k
+            from k3 in k2
+            select new
+            {
+                MyRacers = p2.LastName,
+                MyTeams = g,
+                MyCommand = k3.Name
+            }).ToList();
 
 
 Console.WriteLine("{0,-20} {1,-20} {2}", "Год Чемпион", "Кубок", "конструкторов");
@@ -158,7 +50,6 @@ foreach (var item in quary.Take(10))
         Console.WriteLine("{0,-20} {1,-20} {2}", team.Key, item.MyRacers, item.MyCommand);
     }
 }
-
 
 
 
@@ -289,6 +180,6 @@ public class Team
 
     public override string ToString()
     {
-        return String.Format("{0}",Name);
+        return String.Format("{0}", Name);
     }
 }
