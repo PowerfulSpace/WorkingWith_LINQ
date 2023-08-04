@@ -15,7 +15,7 @@ string text = @"Historically, the world of data and the world of objects" +
 
 string searchTerm = "data";
 
-string[] array = text.Split(new char[] { '.', ',', '!',' ','?',':' },StringSplitOptions.RemoveEmptyEntries);
+string[] array = text.Split(new char[] { '.', ',', '!', ' ', '?', ':' }, StringSplitOptions.RemoveEmptyEntries);
 
 
 var quary = from x in array

@@ -81,11 +81,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.5 GroupingCategoriesAndPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.6 LINQ_Parallel", "LINQ_Parallel\4.6 LINQ_Parallel.csproj", "{B5FB9002-BF22-4891-97FE-D02A79EEDE08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectingSentencesWithCertainWords", "SelectingSentencesWithCertainWords\SelectingSentencesWithCertainWords.csproj", "{C60305DE-8CC7-4724-8F0C-7FD94832BD6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.8 SelectingSentencesWithCertainWords", "SelectingSentencesWithCertainWords\4.8 SelectingSentencesWithCertainWords.csproj", "{C60305DE-8CC7-4724-8F0C-7FD94832BD6A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Racers", "Racers\Racers.csproj", "{A3BC049F-45F8-428D-9AED-6C3FC116C20D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.7 Racers", "Racers\4.7 Racers.csproj", "{A3BC049F-45F8-428D-9AED-6C3FC116C20D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestInMethod", "RequestInMethod\RequestInMethod.csproj", "{3D4D889E-EE67-475D-B24A-D14750A8A6A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.9 RequestInMethod", "RequestInMethod\4.9 RequestInMethod.csproj", "{3D4D889E-EE67-475D-B24A-D14750A8A6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.0 UsingDifferentQueriesAtRuntime", "UsingDifferentQueriesAtRuntime\5.0 UsingDifferentQueriesAtRuntime.csproj", "{B940C958-3869-40AF-8888-3362BB881D9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -257,6 +259,10 @@ Global
 		{3D4D889E-EE67-475D-B24A-D14750A8A6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D4D889E-EE67-475D-B24A-D14750A8A6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D4D889E-EE67-475D-B24A-D14750A8A6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B940C958-3869-40AF-8888-3362BB881D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B940C958-3869-40AF-8888-3362BB881D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B940C958-3869-40AF-8888-3362BB881D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B940C958-3869-40AF-8888-3362BB881D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
