@@ -19,7 +19,7 @@ string[] array = text.Split(new char[] { '.', ',', '!',' ','?',':' },StringSplit
 
 
 var quary = from x in array
-            where x.Contains(searchTerm, StringComparison.InvariantCultureIgnoreCase)
+            where x.Equals(searchTerm, StringComparison.InvariantCultureIgnoreCase)
             select x;
 
 
