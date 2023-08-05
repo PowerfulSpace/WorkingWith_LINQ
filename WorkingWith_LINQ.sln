@@ -91,9 +91,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.0 UsingDifferentQueriesAt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.1 CountingTheNumberOfOccurrencesOfAWord", "CountingTheNumberOfOccurrencesOfAWord\5.1 CountingTheNumberOfOccurrencesOfAWord.csproj", "{8E73F3AA-1D54-4212-B4E3-79D6BF356E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2 FindAllDigitCharacters", "FindAllDigitCharacters\5.2 FindAllDigitCharacters.csproj", "{4B4B919E-3457-4D00-9181-D3C4FFDE3A1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.2 FindAllDigitCharacters", "FindAllDigitCharacters\5.2 FindAllDigitCharacters.csproj", "{4B4B919E-3457-4D00-9181-D3C4FFDE3A1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3 TheDifferenceBetweenTheTwoSpeakers", "TheDifferenceBetweenTheTwoSpeakers\5.3 TheDifferenceBetweenTheTwoSpeakers.csproj", "{6232EBD5-E971-4612-B95E-10AC7488736F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.3 TheDifferenceBetweenTheTwoSpeakers", "TheDifferenceBetweenTheTwoSpeakers\5.3 TheDifferenceBetweenTheTwoSpeakers.csproj", "{6232EBD5-E971-4612-B95E-10AC7488736F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.4 ChangingTheOrderOfFieldsInAFile", "ChangingTheOrderOfFieldsInAFile\5.4 ChangingTheOrderOfFieldsInAFile.csproj", "{62E59FC2-0274-4319-A066-FAFAD38403F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.5 CombiningAndComparingACollectionOfStrings", "CombiningAndComparingACollectionOfStrings\5.5 CombiningAndComparingACollectionOfStrings.csproj", "{985BAAAF-3C9A-49FD-987C-ADC40A502CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -281,6 +285,14 @@ Global
 		{6232EBD5-E971-4612-B95E-10AC7488736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6232EBD5-E971-4612-B95E-10AC7488736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6232EBD5-E971-4612-B95E-10AC7488736F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E59FC2-0274-4319-A066-FAFAD38403F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E59FC2-0274-4319-A066-FAFAD38403F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E59FC2-0274-4319-A066-FAFAD38403F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E59FC2-0274-4319-A066-FAFAD38403F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985BAAAF-3C9A-49FD-987C-ADC40A502CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985BAAAF-3C9A-49FD-987C-ADC40A502CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985BAAAF-3C9A-49FD-987C-ADC40A502CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985BAAAF-3C9A-49FD-987C-ADC40A502CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

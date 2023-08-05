@@ -1,5 +1,4 @@
 ﻿
-using System;
 
 string[] names = File.ReadAllLines(@"D:\Testing\Names.csv");
 string[] scores = File.ReadAllLines(@"D:\Testing\Scores.csv");
