@@ -93,6 +93,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.1 CountingTheNumberOfOccu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2 FindAllDigitCharacters", "FindAllDigitCharacters\5.2 FindAllDigitCharacters.csproj", "{4B4B919E-3457-4D00-9181-D3C4FFDE3A1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3 TheDifferenceBetweenTheTwoSpeakers", "TheDifferenceBetweenTheTwoSpeakers\5.3 TheDifferenceBetweenTheTwoSpeakers.csproj", "{6232EBD5-E971-4612-B95E-10AC7488736F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -275,6 +277,10 @@ Global
 		{4B4B919E-3457-4D00-9181-D3C4FFDE3A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B4B919E-3457-4D00-9181-D3C4FFDE3A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B4B919E-3457-4D00-9181-D3C4FFDE3A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6232EBD5-E971-4612-B95E-10AC7488736F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6232EBD5-E971-4612-B95E-10AC7488736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6232EBD5-E971-4612-B95E-10AC7488736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6232EBD5-E971-4612-B95E-10AC7488736F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
